@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link rel="stylesheet" href="./../style/bootstrap.css">
+    <link rel="stylesheet" href="./css/dashboard.css">
+    <script src="./../login/java/animate.js"></script>
+</head>
+
+<body>
+    <nav class="navbar fixed-top navbar-light bg-dark set-height">
+        <div class="container-fluid">
+            <div class="navbar-content">
+                <h3>Personal Blogging App</h3>
+                <div class="nameSet">
+                    <a id="userName" href="#">moiz</a>
+                    <a href="#" id="logout-btn">LogOut</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="main-hading">
+        <div class="set-position animate-bottom">
+            dashboard
+        </div>
+    </div>
+
+    <div class="main-container">
+        <div class="fixcontainer animate-right">
+
+            <div class="mb-3">
+                <label for="formGroupExampleInput" class="form-label">Titke</label>
+                <input maxlength="50" id="title" type="text" class="form-control" id="formGroupExampleInput"
+                    placeholder="Example input placeholder">
+            </div>
+            <div class="mb-3">
+                <label for="formGroupExampleInput2" class="form-label">Summary</label>
+                <textarea id="inputText" maxlength="3000" class="form-control textarea" placeholder="What's in Your Mind ?"></textarea>
+            </div>
+            <button id="publishbtn">Publish Blog</button>
+        </div>
+
+
+
+        <div class="sub-hading animate-bottom">
+            All Blogs
+        </div>
+
+
+        <div id="blogs">
+            <!-- <div class="blog-container mt-4 animate-right">
+                <div class="d-flex align-items-baseline">
+                    <div class="blog-image">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa3tx9PMv5nwkg4hDg6QlKEY0lva4loK361NwB2L0yZw&s"
+                            alt="">
+                    </div>
+                    <div class="blogText-container">
+
+                        <div class="blog-mainText">
+                            Introducing whisper
+                        </div>
+                        <div class="d-flex">
+
+                            <div class="subText">
+                                ELon Musk
+                            </div>
+                            <div class="subText">
+                                - August 17th, 2023
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="blogSummary animate-top">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum facilis ex esse deserunt velit!
+                    Tenetur quisquam ea asperiores cumque iste possimus officia magni adipisci id. Dolor, tempora
+                    commodi, aliquam laboriosam aliquid incidunt debitis voluptate, ab corporis reprehenderit velit
+                    in voluptatem. Asperiores ullam consequuntur est cumque quae saepe doloribus distinctio culpa
+                    dolores fugiat beatae iusto cupiditate quia fugit, officia alias? Dolor autem enim, eius
+                    adipisci natus ullam sapiente nobis?
+                </div>
+                <button class="custombtn">Edit</button>
+                <button class="custombtn">Delete</button>
+            </div>
+
+            <div class="blog-container mt-4 animate-right">
+                <div class="d-flex align-items-baseline">
+                    <div class="blog-image">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa3tx9PMv5nwkg4hDg6QlKEY0lva4loK361NwB2L0yZw&s"
+                            alt="">
+                    </div>
+                    <div class="blogText-container">
+
+                        <div class="blog-mainText">
+                            Introducing whisper
+                        </div>
+                        <div class="d-flex">
+
+                            <div class="subText">
+                                ELon Musk
+                            </div>
+                            <div class="subText">
+                                - August 17th, 2023
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="blogSummary animate-top">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum facilis ex esse deserunt velit!
+                    Tenetur quisquam ea asperiores cumque iste possimus officia magni adipisci id. Dolor, tempora
+                    commodi, aliquam laboriosam aliquid incidunt debitis voluptate, ab corporis reprehenderit velit
+                    in voluptatem. Asperiores ullam consequuntur est cumque quae saepe doloribus distinctio culpa
+                    dolores fugiat beatae iusto cupiditate quia fugit, officia alias? Dolor autem enim, eius
+                    adipisci natus ullam sapiente nobis?Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Quisquam
+                    dicta aperiam laboriosam sint laudantium libero cum deserunt nisi, repellat rem! Laboriosam
+                    corrupti,
+                    natus molestias eligendi exercitationem error praesentium, officiis facere quam minima totam
+                    assumenda
+                    quod, ipsum voluptates reprehenderit quae doloremque!
+                    Tenetur quisquam ea asperiores cumque iste possimus officia magni adipisci id. Dolor, tempora
+                    commodi, aliquam laboriosam aliquid incidunt debitis voluptate, ab corporis reprehenderit velit
+                    in voluptatem. Asperiores ullam consequuntur est cumque quae saepe doloribus distinctio culpa
+                    dolores fugiat beatae iusto cupiditate quia fugit, officia alias? Dolor autem enim, eius
+                    adipisci natus ullam sapiente nobis?Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Quisquam
+                    dicta aperiam laboriosam sint laudantium libero cum deserunt nisi, repellat rem! Laboriosam
+                    corrupti,
+                    natus molestias eligendi exercitationem error praesentium, officiis facere quam minima totam
+                    assumenda
+                    quod, ipsum voluptates reprehenderit quae doloremque!
+                    Tenetur quisquam ea asperiores cumque iste possimus officia magni adipisci id. Dolor, tempora
+                    commodi, aliquam laboriosam aliquid incidunt debitis voluptate, ab corporis reprehenderit velit
+                    in voluptatem. Asperiores ullam consequuntur est cumque quae saepe doloribus distinctio culpa
+                    dolores fugiat beatae iusto cupiditate quia fugit, officia alias? Dolor autem enim, eius
+                    adipisci natus ullam sapiente nobis?Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Quisquam
+                    dicta aperiam laboriosam sint laudantium libero cum deserunt nisi, repellat rem! Laboriosam
+                    corrupti,
+                    natus molestias eligendi exercitationem error praesentium, officiis facere quam minima totam
+                    assumenda
+                    quod, ipsum voluptates reprehenderit quae doloremque!
+                </div>
+                <button class="custombtn">Edit</button>
+                <button class="custombtn">Delete</button>
+            </div> -->
+        </div>
+    </div>
+    </div>
+
+    <script>
+    ScrollReveal({
+      reset:true,
+      distance:"60px",
+      duration:2500,
+      delay: 400
+    })
+    ScrollReveal().reveal('.animate-top', {delay: 300, origin:"top"} )
+    ScrollReveal().reveal('.animate-right', {delay: 300, origin:"right"} )
+    ScrollReveal().reveal('.animate-bottom', {delay: 300, origin:"bottom"} )
+    </script>
+<script type="module" src="java/dashboard.js"></script>
+</body>
+
+</html>
